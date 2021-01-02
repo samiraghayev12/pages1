@@ -899,13 +899,15 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
     <script src="assets/js/agency.js"></script>
     <script>
-        
-        function send(){
-            alert("MESAJINIZ UĞURLA GÖNDƏRİLDİ!");
+        function gonder(){
             document.getElementById('name').value = "";
             document.getElementById('phone').value = "";
             document.getElementById('message').value = "";
             document.getElementById('email-address').value = "";
+    }
+        function send(){
+            alert("MESAJINIZ UĞURLA GÖNDƏRİLDİ!");
+            setTimeout(function(){gonder();},1000);
         }
       </script>
 </body>
